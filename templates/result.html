@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>result</title>
+</head>
+<body>
+<table border="1">
+      <thead>
+      <th>name</th>
+      <th>email</th>
+      <th>phone</th>
+      <th>office</th>
+      <th>campus</th>
+      </thead>
+      <tbody>
+      {%  for line in data%}
+      <tr>
+          <td>{{ line.name }}</td>
+          <td>{{ line.email }}</td>
+          <td>{{ line.phonenumber}}</td>
+          <td>{{ line.office }}</td>
+          <td>{{ line.campus}}</td>
+      </tr>
+      {%endfor%}
+      </tbody>
+
+  </table>
+
+</body>
+</html>
